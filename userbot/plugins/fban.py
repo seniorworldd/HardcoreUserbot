@@ -8,7 +8,7 @@ import asyncio
 from uniborg.util import admin_cmd
 
 
-@borg.on(admin_cmd(pattern="fban ?(.*)"), allow_sudo=True)
+@command(outgoing=True, pattern=r"^.fban ?(.*)", allow_sudo=True)
 async def _(event):
     if Config.F_BAN_LOGGER_GROUP is None:
         await event.edit("ENV VAR is not set. This module will not work.")
@@ -29,7 +29,7 @@ async def _(event):
     await event.delete()
 
 
-@borg.on(admin_cmd(pattern="unfban ?(.*)"), allow_sudo=True)
+@command(outgoing=True, pattern=r"^.unfban ?(.*)", allow_sudo=True)
 async def _(event):
     if Config.F_BAN_LOGGER_GROUP is None:
         await event.edit("ENV VAR is not set. This module will not work.")
@@ -62,7 +62,7 @@ async def _(event):
     await event.delete()
 
 
-@borg.on(admin_cmd(pattern="unfban ?(.*)"), allow_sudo=True)
+@command(outgoing=True, pattern=r"^.unfban ?(.*)", allow_sudo=True)
 async def _(event):
     if Config.F_BAN_LOGGER_GROUP is None:
         await event.edit("ENV VAR is not set.")
