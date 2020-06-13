@@ -63,13 +63,13 @@ async def _(event):
     if (x==23):
       await event.edit("**Levicorpus**")
     if (x==24):
-      await event.edit("**Lumos**")
+      await event.edit("**Ls**")
     if (x==25):
       await event.edit("**Muffliato**")
     if (x==26):
-      await event.edit("**Obliviate**")
+      await event.edit("**Obliate**")
     if (x==27):
-      await event.edit("**Petrificus Totalus**")
+      await event.edit("**Petrs Totalus**")
     if (x==28):
       await event.edit("**Priori Incantato**")
     if (x==29):
