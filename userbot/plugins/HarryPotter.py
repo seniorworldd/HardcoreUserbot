@@ -77,7 +77,7 @@ async def _(event):
     if (x==30):
       await event.edit("**Reducto**")
     if (x==31):
-      await event.edit("**Rennervate**")
+      await event.edit("**Reate**")
     if (x==32):
       await event.edit("**Revelio**")
     if (x==33):
