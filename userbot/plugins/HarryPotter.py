@@ -17,7 +17,7 @@ async def _(event):
         return
     x=(random.randrange(1,40)) 
     if (x==1):
-      await event.edit("**Aberto**")
+      await event.edit("**Abo**")
     if (x==2):
       await event.edit("**Accio**")
     if (x==3):
