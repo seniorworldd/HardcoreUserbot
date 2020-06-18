@@ -8,6 +8,7 @@ import os
 import time
 import asyncio
 import shutil
+import requests
 from bs4 import BeautifulSoup
 import re
 from re import findall
@@ -15,6 +16,13 @@ from search_engine_parser import GoogleSearch
 from asyncio import sleep
 from userbot.utils import register
 from telethon.tl.types import DocumentAttributeAudio
+from datetime import datetime
+from requests import get
+from urllib.parse import quote_plus
+from urllib.error import HTTPError
+from google_images_download import google_images_download
+from gsearch.googlesearch import search
+from userbot.utils import admin_cmd
 
 def progress(current, total):
     logger.info("Downloaded {} of {}\nCompleted {}".format(current, total, (current / total) * 100))
